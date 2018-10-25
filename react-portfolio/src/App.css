@@ -1,0 +1,16 @@
+body,
+html {
+  height: 100vh;
+}
+
+body {
+  background-image: url("./assets/images/rudbeckia.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3em;
+}

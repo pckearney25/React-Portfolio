@@ -1,0 +1,346 @@
+body,
+html {
+  height: 100vh;
+}
+
+body {
+  background-image: url("../images/rudbeckia.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+}
+h1 {
+  font-size: 3em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  background-color: beige;
+  font-family: "Cormorant SC", serif;
+  z-index: 5;
+  border-bottom: 2px solid #16270f;
+}
+
+.header-child {
+  flex-grow: 1;
+}
+
+header div {
+  padding: 25px 20px 25px 20px;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: 400px;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 1.4em;
+}
+
+header ul li {
+  flex-grow: 1;
+  text-align: center;
+  width: 100px;
+  border-right: 1px solid black;
+}
+
+header ul li:last-child {
+  border-right: none;
+}
+
+header ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.125);
+  color: black;
+}
+
+#page-container {
+  margin-top: 0px;
+}
+
+#quote-container {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  opacity: 1;
+}
+#quote-container div {
+  font-size: 1.5em;
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.section-container {
+  margin: 0px 40px 40px 40px;
+  background: rgba(245, 245, 220, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #16270f;
+}
+
+.section-img-div {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #16270f;
+}
+
+.section-header {
+  font-family: "Cormorant SC", serif;
+  font-size: 2.6em;
+  color: black;
+  text-align: center;
+  margin: 20px;
+}
+
+.section-paragraph {
+  font-family: "Cormorant Garamond", serif;
+  color: black;
+  font-size: 1.4em;
+  line-height: 1.6em;
+
+  padding: 0px 40px 20px 40px;
+  text-align: justify;
+}
+
+.section-paragraph span {
+  font-weight: 700;
+}
+.section-content p:nth-child(3) {
+  padding: 0px 40px 15px 40px;
+}
+
+.section-list {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px 40px 40px 40px;
+  font-family: "Cormorant SC", serif;
+  font-size: 1.4em;
+}
+
+.section-list li {
+  flex-grow: 1;
+  text-align: center;
+  border-right: 1px solid black;
+}
+
+.section-list li:last-child {
+  border-right: none;
+}
+
+.section-list li a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+#contact-form {
+  margin: 0px 40px 20px 40px;
+}
+
+#form-info-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.form-group {
+  flex-grow: 1;
+  font-family: "Cormorant Garamond", serif;
+  padding-bottom: 10px;
+}
+
+.form-group:nth-child(1) {
+  width: 50%;
+}
+
+.form-group:nth-child(2) {
+  width: 50%;
+}
+
+.form-group:nth-child(3) {
+  width: 100%;
+}
+
+.form-group:nth-child(4) {
+  width: 100%;
+}
+.form-group label {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1em;
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+  padding: 8px 0px 8px 8px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 80%;
+}
+
+#contact-subject {
+  width: 90%;
+}
+
+.form-group textarea {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1em;
+  color: black;
+  display: block;
+  width: 90%;
+  margin-bottom: 5px;
+  padding: 8px 0px 8px 8px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+small {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: #8e44ad;
+}
+
+button {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1em;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #8e44ad;
+  color: white;
+  background-color: #8e44ad;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background-color: #be2edd;
+}
+
+#contact-addendum {
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: beige;
+  font-family: "Cormorant SC", serif;
+  font-size: 1.4em;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-top: 2px solid #16270f;
+}
+
+.soc-media-div {
+  margin-top: 5px;
+}
+
+.soc-media-links {
+  margin: 0px 10px 0px 10px;
+}
+
+.fab {
+  font-size: 36px;
+  color: #16270f;
+}
+@media all and (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  header div {
+    padding: 5px 0px 0px 0px;
+  }
+  header h1 {
+    text-align: center;
+  }
+  header h5 {
+    text-align: center;
+  }
+  header ul {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+@media all and (max-width: 542px) {
+  header ul li {
+    width: 40%;
+    padding: 5px;
+    border: none;
+  }
+
+  .section-container {
+    margin: 0px 20px 40px 20px;
+  }
+  .section-list {
+    margin-bottom: 30px;
+  }
+
+  .section-list li {
+    width: 80%;
+    padding-bottom: 10px;
+    border: none;
+  }
+
+  .form-group:nth-child(1) {
+    width: 100%;
+  }
+
+  .form-group:nth-child(2) {
+    width: 100%;
+  }
+
+  .form-group input {
+    width: 90%;
+  }
+}
