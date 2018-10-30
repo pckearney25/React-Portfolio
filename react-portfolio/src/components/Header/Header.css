@@ -65,8 +65,8 @@ header ul li a {
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
-  transform: scale(1.2);
-  color: #3c0775;
+  transform: scale(1.125);
+  color: #4f1192;
 }
 
 @media all and (max-width: 800px) {

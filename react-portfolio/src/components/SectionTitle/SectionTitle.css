@@ -1,0 +1,22 @@
+.section-img-div {
+  margin-top: 30px;
+}
+
+.section-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #16270f;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-family: "Cormorant SC", serif;
+  color: black;
+  text-align: center;
+  margin: 20px;
+}

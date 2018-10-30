@@ -12,7 +12,7 @@ const Header = () => (
     </div>
     <ul className="header-child">
       <li className="header-li">
-        <Link to="/about" className="hvr-grow">
+        <Link to="/about" className="hvr-grow active">
           About
         </Link>
       </li>
@@ -27,9 +27,9 @@ const Header = () => (
         </Link>
       </li>
       <li className="header-li">
-        <a href="#contact-container" className="hvr-grow">
+        <Link to="/contact" className="hvr-grow">
           Contact
-        </a>
+        </Link>
       </li>
     </ul>
   </header>
