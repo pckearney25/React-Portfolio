@@ -27,3 +27,32 @@ h2 {
   padding: 0px 40px 20px 40px;
   text-align: justify;
 }
+
+.section-paragraph span {
+  font-weight: 700;
+}
+
+.section-list {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px 40px 40px 40px;
+  font-family: "Cormorant SC", serif;
+  font-size: 1.4em;
+}
+
+.section-list li {
+  flex-grow: 1;
+  text-align: center;
+  border-right: 1px solid black;
+}
+
+.section-list li:last-child {
+  border-right: none;
+}
+
+.section-list li a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
