@@ -1,5 +1,13 @@
 import React from "react";
 import "./Footer.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { faStackOverflow } from "@fortawesome/free-brands-svg-icons";
+
+library.add(fab, faLinkedin, faGithubSquare, faStackOverflow);
 
 const Footer = () => (
   <footer>
@@ -11,7 +19,7 @@ const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-linkedin" />
+        <FontAwesomeIcon icon={["fab", "linkedin"]} className="fab" />
       </a>
       <a
         className="soc-media-links hvr-grow"
@@ -19,7 +27,7 @@ const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-github-square" />
+        <FontAwesomeIcon icon={["fab", "github-square"]} className="fab" />
       </a>
       <a
         className="soc-media-links hvr-grow"
@@ -27,7 +35,7 @@ const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-stack-overflow" />
+        <FontAwesomeIcon icon={["fab", "stack-overflow"]} className="fab" />
       </a>
     </div>
   </footer>

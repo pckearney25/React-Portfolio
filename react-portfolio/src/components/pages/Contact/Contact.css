@@ -73,9 +73,9 @@ small {
 button {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.1em;
-  width: 100px;
+  width: 160px;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 0.5em;
   border: 1px solid #4f1192;
   color: white;
   background-color: #4f1192;

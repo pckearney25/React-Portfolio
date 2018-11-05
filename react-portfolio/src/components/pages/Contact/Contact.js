@@ -2,6 +2,11 @@ import React from "react";
 import Wrapper from "../../Wrapper";
 import SectionTitle from "../../SectionTitle";
 import "./Contact.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDove } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faDove);
 
 const Contact = () => (
   <Wrapper>
@@ -14,7 +19,6 @@ const Contact = () => (
         Fill out and submit the form below to contact me.
         <sup>*</sup> I love meeting and talking with people, so let me hear from
         you!
-        <sup>*</sup>{" "}
       </p>
 
       <form action="/webformmailer.php" method="post" id="contact-form">
@@ -62,8 +66,8 @@ const Contact = () => (
           </div>
         </div>
         <button type="submit" className="btn-submit">
-          <i className="fas fa-dove" />
-          <span> Contact!</span>
+          <FontAwesomeIcon icon="dove" />
+          <span> Contact Patrick!</span>
         </button>
         <input type="hidden" name="form_order" value="alpha" />
         <input type="hidden" name="form_delivery" value="hourly_digest" />
