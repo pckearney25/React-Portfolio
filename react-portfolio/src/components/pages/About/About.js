@@ -4,68 +4,86 @@ import SectionTitle from "../../SectionTitle";
 import WorkTimeline from "../../WorkTimeline";
 import "./About.css";
 
-const About = () => (
-  <div>
-    <Wrapper>
-      <SectionTitle
-        src={require("../../../assets/images/author.jpg")}
-        sectiontitle={"About Me"}
-      />
-      <p className="section-paragraph">
-        In my work as a both a PhD pharmaceutical research scientist and an
-        entrepreneur, I’ve seen a need for making information more useful to
-        everyday people. In the next phase of my career, I want to help
-        companies, organizations, and individuals better utilize information to
-        create the products we’ll need in order to build a healthier and more
-        sustainable world.
-      </p>
+class About extends React.Component {
+  componentWillMount() {
+    window.scrollTo(0, 0);
+  }
 
-      <p className="section-paragraph">
-        I started studying full-stack web-development, because there remains
-        plenty of information that could be far more useful if incorporated into
-        databases (e.g. SQL or Mongo) and accessed through well designed web
-        interfaces. I recently completed the six-month program in
-        web-development offered by University of Kansas, and I am currently
-        seeking employment in the field.
-      </p>
+  render() {
+    return (
+      <div>
+        <Wrapper>
+          <SectionTitle
+            src={require("../../../assets/images/author.jpg")}
+            sectiontitle={"About Me"}
+          />
+          <p className="section-paragraph">
+            <span>{`Career: `}</span>{" "}
+            {`In my work as a both a PhD
+        pharmaceutical research scientist and an entrepreneur, I’ve seen a need
+        for making information more useful to everyday people. In the next phase
+        of my career, I want to help companies, organizations, and individuals
+        better utilize information to create the products we’ll need in order to
+        build a healthier and more sustainable world.`}
+          </p>
 
-      <WorkTimeline />
+          <p className="section-paragraph">
+            <span>{`Coding Interest: `}</span>
+            {`I started studying full-stack web-development, because in my opinion there remains plenty of
+        information, which can be incorporated into databases (e.g. SQL or Mongo),
+        ce accessed through well designed web interfaces, and serve as the foundation
+        of new businesses. I recently completed the six-month program in
+        web-development offered by University of Kansas, am currently seeking
+        employment in the field, and work everyday to developing my coding
+        skills.`}
+          </p>
 
-      <p className="section-paragraph">
-        I’m an active life-long learner, and in addition to web-development I am
-        also studying to become a certified master gardener through the
-        University of Missouri Extension Program. Unsurprisingly, in trying to
-        combine these two interests, I can be found in my spare time over on
-        Bee-Z Street, a home gardening application that I’m developing with
-        <a href="https://www.samanthamccallfp18.com/">Samantha McCall</a>, whom
-        I met during the KU program.
-      </p>
+          <p className="section-paragraph">
+            <span>{`Career Highlights: `}</span>
+          </p>
 
-      <p className="section-paragraph">
-        Click to download my techical resume or scientific CV here:
-      </p>
-      <ul className="section-list">
-        <li>
-          <a
-            href={require("../../../assets/files/PCK_Technical_Resume.pdf")}
-            target={"_blank"}
-            className="hvr-grow"
-          >
-            Technical Resume
-          </a>
-        </li>
-        <li>
-          <a
-            href={require("../../../assets/files/PCK_CV.pdf")}
-            target={"_blank"}
-            className="hvr-grow"
-          >
-            Scientific CV
-          </a>
-        </li>
-      </ul>
-    </Wrapper>
-  </div>
-);
+          <WorkTimeline />
 
+          <p className="section-paragraph">
+            <span>Personal Interests: </span>
+            {`I’m an active life-long learner, and
+        in addition to web-development I am also studying to become a certified
+        master gardener through the University of Missouri Extension Program. I'm 
+       currently developing Bee-Z Street, a home gardening
+        application that I’m working on with `}
+            <a href="https://www.samanthamccallfp18.com/">{`Samantha McCall`}</a>
+            {`,
+        whom I met during the KU program. I'm also developing ideas to
+        make fitness and nutrition more generally appealing to men of all walks
+        of life.`}
+          </p>
+
+          <p className="section-paragraph">
+            {`Download my techical resume or scientific CV here:`}
+          </p>
+          <ul className="section-list">
+            <li>
+              <a
+                href={require("../../../assets/files/PCK_Technical_Resume.pdf")}
+                target={"_blank"}
+                className="hvr-grow"
+              >
+                Technical Resume
+              </a>
+            </li>
+            <li>
+              <a
+                href={require("../../../assets/files/PCK_CV.pdf")}
+                target={"_blank"}
+                className="hvr-grow"
+              >
+                Scientific CV
+              </a>
+            </li>
+          </ul>
+        </Wrapper>
+      </div>
+    );
+  }
+}
 export default About;

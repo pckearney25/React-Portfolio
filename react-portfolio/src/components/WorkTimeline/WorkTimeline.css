@@ -1,6 +1,14 @@
+@import "../../VerticalTimeline.css";
+@import "../../VerticalTimelineElement.css";
+
 #timeline-div {
   background-color: #14390a;
-  margin: 40px;
+  margin: 0px 40px 40px 40px;
   border-radius: 0.5em;
   border: 2px solid #16270f;
+}
+
+.fa-icon {
+  width: 26px;
+  height: 26px;
 }

@@ -3,16 +3,17 @@ import {
   VerticalTimeline,
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import "./WorkTimeline.css";
-import StarIcon from "../StarIcon";
-import SchoolIcon from "../SchoolIcon";
-import WorkIcon from "../WorkIcon";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLeaf } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLeaf,
+  faBriefcase,
+  faGraduationCap,
+  faBook
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faLeaf);
+library.add(faLeaf, faBriefcase, faGraduationCap, faBook);
 
 class WorkTimeline extends Component {
   render() {
@@ -21,117 +22,133 @@ class WorkTimeline extends Component {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2011 - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<WorkIcon />}
+            date=" July 2018 - present"
+            iconStyle={{ background: "#58B041", color: "#fff" }}
+            icon={<FontAwesomeIcon class="fa-icon" icon="briefcase" />}
           >
-            <h3 className="vertical-timeline-element-title">
-              Creative Director
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
+            <h3 className="vertical-timeline-element-title">Founder</h3>
+            <h4 className="vertical-timeline-element-subtitle">Bee-Z Street</h4>
             <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
+              Kansas City, MO
             </h4>
             <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online
-              Marketing
+              Market Research, Business Plan Development, Web-Design,
+              Web-Development
             </p>
           </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="January 2018 - July 2018"
+            iconStyle={{ background: "#C84A59", color: "#fff" }}
+            icon={<FontAwesomeIcon class="fa-icon" icon="graduation-cap" />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Certificate in Full-Stack Web-Development
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              University of Kansas Extention
+            </h4>
+            <h4 className="vertical-timeline-element-subtitle">
+              Overland Park, KS
+            </h4>
+            <p>JavaScript, Node, React, MySQL, MongoDb, Node and more.</p>
+          </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2008 - 2010"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<WorkIcon />}
+            date="November 2012 - September 2017"
+            iconStyle={{ background: "#58B041", color: "#fff" }}
+            icon={<FontAwesomeIcon class="fa-icon" icon="briefcase" />}
           >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h3 className="vertical-timeline-element-title">Founder and CEO</h3>
+            <h4 className="vertical-timeline-element-subtitle">HD Sciences</h4>
             <h4 className="vertical-timeline-element-subtitle">
-              Los Angeles, CA
+              Kansas City, KS
             </h4>
-            <p>User Experience, Visual Design</p>
+            <p>
+              Microscale Chemical Synthesis Technology Development, Grant
+              Writing, Business Development
+            </p>
           </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="March 2013 - April 2013"
+            iconStyle={{ background: "#C84A59", color: "#fff" }}
+            icon={<FontAwesomeIcon class="fa-icon" icon="graduation-cap" />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Certificate in Tech Entrepreneurship
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Kauffman Foundation TechVenture Program
+            </h4>
+            <h4 className="vertical-timeline-element-subtitle">
+              Kansas City, MO
+            </h4>
+            <p>Study of Start-up Entrepreneurship</p>
+          </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2006 - 2008"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
-            </h4>
-            <p>User Experience, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="April 2013"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-            icon={<SchoolIcon />}
+            date="Aug 1999 - January 2011"
+            iconStyle={{ background: "#58B041", color: "#fff" }}
+            icon={<FontAwesomeIcon class="fa-icon" icon="briefcase" />}
           >
             <h3 className="vertical-timeline-element-title">
-              Content Marketing for Web, Mobile and Social Media
+              Senior Director, Medicinal Chemistry
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Online Course
+              Exeleixis LLC
             </h4>
-            <p>Strategy, Social Media</p>
+            <h4 className="vertical-timeline-element-subtitle">
+              South San Francisco, CA
+            </h4>
+            <p>
+              Cancer and Inflammation Drug Discovery, Chemical Library
+              Development, Team Leadership, Department and Project Management
+            </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="November 2012"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-            icon={<SchoolIcon />}
+            date="January 1994"
+            iconStyle={{ background: "#C84A59", color: "#fff" }}
+            icon={<FontAwesomeIcon class="fa-icon" icon="graduation-cap" />}
           >
             <h3 className="vertical-timeline-element-title">
-              Agile Development Scrum Master
+              PhD in Chemistry
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Certification
+              California Insitute of Technology
             </h4>
-            <p>Creative Direction, User Experience, Visual Design</p>
+            <h4 className="vertical-timeline-element-subtitle">Pasadena, CA</h4>
+            <p>Specialization in Physical Organic Chemistry</p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2002 - 2006"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-            icon={<SchoolIcon />}
+            date="June 1987"
+            iconStyle={{ background: "#C84A59", color: "#fff" }}
+            icon={<FontAwesomeIcon class="fa-icon" icon="graduation-cap" />}
           >
             <h3 className="vertical-timeline-element-title">
-              Bachelor of Science in Interactive Digital Media Visual Imaging
+              Bachelor of Science, Chemistry
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Bachelor Degree
+              Carnegie Mellon University
             </h4>
-            <p>Creative Direction, Visual Design</p>
+            <h4 className="vertical-timeline-element-subtitle">
+              Pittsburgh, PA
+            </h4>
+            <p>Graduation with honors.</p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--gardening"
-            date="2018 motherfuckers"
-            iconStyle={{ background: "#218c74", color: "#fff" }}
-            icon={<FontAwesomeIcon icon="leaf" />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Master Gardeners of Greater Kansas City
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Certificate of Completion
-            </h4>
-            <p>Basic Gardening Skills</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-            icon={<StarIcon />}
+            iconStyle={{ background: "#44220C", color: "#fff" }}
+            icon={<FontAwesomeIcon class="fa-icon" icon="leaf" />}
           />
         </VerticalTimeline>
       </div>
