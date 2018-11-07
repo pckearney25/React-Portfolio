@@ -52,7 +52,7 @@ class WorkTimeline extends Component {
             <h4 className="vertical-timeline-element-subtitle">
               Overland Park, KS
             </h4>
-            <p>JavaScript, Node, React, MySQL, MongoDb, Node and more.</p>
+            <p>JavaScript, Node, React, MySQL, MongoDB, Node and more.</p>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
