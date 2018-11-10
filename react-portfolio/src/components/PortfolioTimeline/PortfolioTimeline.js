@@ -1,4 +1,4 @@
-import projects from "../../assets/files/projects.json";
+import projects from "../../assets/files/projects";
 import React, { Component } from "react";
 import {
   VerticalTimeline,
@@ -27,7 +27,7 @@ class PortfolioTimeline extends Component {
               className="vertical-timeline-element--project"
               date={project.date}
               iconStyle={{ background: "#58B041", color: "#fff" }}
-              icon={<FontAwesomeIcon class="fa-icon" icon="sun" />}
+              icon={project.icon}
             >
               <img
                 src={project.imgSrc}
