@@ -16,12 +16,12 @@ class Portfolio extends React.Component {
           src={require("../../../assets/images/butterflyweed.jpg")}
           sectiontitle={"Portfolio"}
         />
-        <p class="section-paragraph">
-          <span>My Portfolio: </span> Here are a few of the projects that I've
-          enjoyed working on. These span a range from a simple JavaScript game
-          to a full-stack MERN application incorporating user authentication.
-          Consistent throughout my work is an emphasis on providing a clean user
-          interface and an enjoyable user experience.
+        <p className="section-paragraph">
+          <span>About the Portfolio: </span> Presented are a few of the projects
+          that I've enjoyed working on. These span a range from a simple
+          JavaScript game to a full-stack MERN application incorporating user
+          authentication. Consistent throughout my work is an emphasis on
+          providing a clean user interface and an enjoyable user experience.
         </p>
 
         <p className="section-paragraph">

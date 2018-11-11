@@ -7,10 +7,32 @@ import {
 import "./PortfolioTimeline.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import {
+  faDatabase,
+  faCode,
+  faPassport,
+  faServer
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faReact,
+  faNodeJs,
+  faJsSquare,
+  faCss3
+} from "@fortawesome/free-brands-svg-icons";
 //Note we use faLeaf too, but its imported elsewhere.
 //In future import all fa icons at App level for cleaner code?
-library.add(faSun);
+library.add(
+  fab,
+  faDatabase,
+  faCode,
+  faPassport,
+  faReact,
+  faNodeJs,
+  faJsSquare,
+  faCss3,
+  faServer
+);
 
 class PortfolioTimeline extends Component {
   state = {
@@ -25,26 +47,42 @@ class PortfolioTimeline extends Component {
               id={project.id}
               key={project.id}
               className="vertical-timeline-element--project"
-              date={project.date}
+              date={`Originally Deployed: ${project.date}`}
               iconStyle={{ background: "#58B041", color: "#fff" }}
               icon={project.icon}
             >
-              <img
-                src={project.imgSrc}
-                alt="Smiley face"
-                width="200px"
-                height="200px"
-              />
-              <h3 className="vertical-timeline-element-title">
-                {project.title}
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                {project.description}
-              </h4>
+              <div className="timeline-project-container">
+                <div className="timeline-project-image-div">
+                  <img
+                    className="timeline-project-image"
+                    src={project.imgSrc}
+                    alt="project-pic"
+                  />
+                </div>
 
-              <p>{project.highlights}</p>
-              <a href={project.repo}>Project Repo</a>
-              <a href={project.deployed}>Deployed App</a>
+                <div className="timeline-project-container-div">
+                  <h3 className="timeline-project-title">{project.title}</h3>
+                  <h4 className="timeline-project-description">
+                    {project.description}
+                  </h4>
+                </div>
+              </div>
+              <p className="timeline-project-paragraph">
+                <span>{`Highlights: `}</span>
+                {project.highlights}
+              </p>
+              <div className="timeline-buttons-container">
+                <button className="timeline-repo-btn">
+                  <a target={"_blank"} href={project.repo}>
+                    Project Code
+                  </a>
+                </button>
+                <button className="timeline-deployed-btn">
+                  <a target={"_blank"} href={project.deployed}>
+                    Deployed App
+                  </a>
+                </button>
+              </div>
             </VerticalTimelineElement>
           ))}
 

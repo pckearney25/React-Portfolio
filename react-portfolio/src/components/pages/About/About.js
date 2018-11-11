@@ -31,10 +31,10 @@ class About extends React.Component {
             <span>{`Coding Interest: `}</span>
             {`I started studying full-stack web-development, because in my opinion there remains plenty of
         information, which can be incorporated into databases (e.g. SQL or Mongo),
-        ce accessed through well designed web interfaces, and serve as the foundation
+        be accessed through well designed web interfaces, and serve as the foundation
         of new businesses. I recently completed the six-month program in
         web-development offered by University of Kansas, am currently seeking
-        employment in the field, and work everyday to developing my coding
+        employment in the field, and work everyday to advance my coding
         skills.`}
           </p>
 

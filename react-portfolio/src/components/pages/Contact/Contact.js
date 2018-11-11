@@ -12,11 +12,11 @@ const Contact = () => (
   <Wrapper>
     <SectionTitle
       src={require("../../../assets/images/bee_chain.jpg")}
-      sectiontitle={"Contact Me"}
+      sectiontitle={"Contact"}
     />
     <div className="section-content">
       <p className="section-paragraph">
-        Fill out and submit the form below to contact me.
+        <span>{`To Reach Me: `}</span>Simply fill out and submit the form below.
         <sup>*</sup> I love meeting and talking with people, so let me hear from
         you!
       </p>
@@ -48,7 +48,7 @@ const Contact = () => (
               className="form-control"
               type="text"
               id="contact-subject"
-              placeholder="Re: Networking Telecon"
+              placeholder="e.g. Networking Telecon"
             />
           </div>
           <div className="form-group">
