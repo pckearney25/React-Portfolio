@@ -1,6 +1,7 @@
 import React from "react";
 import Wrapper from "../../Wrapper";
 import SectionTitle from "../../SectionTitle";
+import BlogTimeline from "../../Timelines/BlogTimeline";
 import "./Blog.css";
 
 const Blog = () => (
@@ -16,6 +17,8 @@ const Blog = () => (
       below or click on the links to see my full blog or part of an scientific
       research proposal I've submitted to the National Insitutes of Health.{" "}
     </p>
+
+    <BlogTimeline />
   </Wrapper>
 );
 

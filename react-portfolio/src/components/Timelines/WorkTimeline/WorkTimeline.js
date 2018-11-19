@@ -1,4 +1,4 @@
-import careers from "../../assets/files/careers";
+import careers from "../../../assets/files/careers";
 import React, { Component } from "react";
 import {
   VerticalTimeline,

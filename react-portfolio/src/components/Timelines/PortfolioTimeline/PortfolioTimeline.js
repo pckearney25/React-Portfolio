@@ -1,4 +1,4 @@
-import projects from "../../assets/files/projects";
+import projects from "../../../assets/files/projects";
 import React, { Component } from "react";
 import {
   VerticalTimeline,

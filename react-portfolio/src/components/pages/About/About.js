@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "../../Wrapper";
 import SectionTitle from "../../SectionTitle";
-import WorkTimeline from "../../WorkTimeline";
+import WorkTimeline from "../../Timelines/WorkTimeline";
 import "./About.css";
 
 class About extends React.Component {

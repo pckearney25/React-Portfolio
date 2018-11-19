@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "../../Wrapper";
 import SectionTitle from "../../SectionTitle";
-import PortfolioTimeline from "../../PortfolioTimeline";
+import PortfolioTimeline from "../../Timelines/PortfolioTimeline";
 import "./Portfolio.css";
 
 class Portfolio extends React.Component {
@@ -17,10 +17,10 @@ class Portfolio extends React.Component {
           sectiontitle={"Portfolio"}
         />
         <p className="section-paragraph">
-          <span>About the Portfolio: </span> Presented are a few of the projects
-          that I've enjoyed working on. These span a range from a simple
-          JavaScript game to a full-stack MERN application incorporating user
-          authentication. Consistent throughout my work is an emphasis on
+          <span>About the Portfolio: </span> Presented cat are a few of the
+          projects that I've enjoyed working on. These span a range from a
+          simple JavaScript game to a full-stack MERN application incorporating
+          user authentication. Consistent throughout my work is an emphasis on
           providing a clean user interface and an enjoyable user experience.
         </p>
 

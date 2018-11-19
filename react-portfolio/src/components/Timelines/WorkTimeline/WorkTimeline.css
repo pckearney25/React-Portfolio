@@ -1,5 +1,5 @@
-@import "../../assets/css/VerticalTimeline.css";
-@import "../../assets/css/VerticalTimelineElement.css";
+@import "../../../assets/css/VerticalTimeline.css";
+@import "../../../assets/css/VerticalTimelineElement.css";
 
 #timeline-div {
   background-color: #14390a;
