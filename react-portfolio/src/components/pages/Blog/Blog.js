@@ -36,24 +36,22 @@ class Blog extends React.Component {
           sectiontitle={"Blog"}
         />
         <p class="section-paragraph">
-          {`I strive to be informative, consise, and clear in all of my personal,
-          social media, professional writing. Check out my most recent blog
-          posts below or click on the links to see my full blog or part of an
-          scientific research proposal I've submitted to the National Insitutes
-          of Health.`}
+          {`Check out the summary list of my most recent blog posts below. To see a full post, click the “Read Full Post” button attached to each item. To follow up with me on any post, send me a message over on the “Contact” page.`}
         </p>
         <div className="blog-container">
           {this.state.blogs.map(blogPost => (
-            <BlogPost
-              id={blogPost.id}
-              key={blogPost.id.toString()}
-              title={blogPost.title}
-              date={blogPost.date}
-              teaser={blogPost.teaser}
-              imgSrc={blogPost.imgSrc}
-              link={blogPost.link}
-              handleClick={y => this.handleClick(y)}
-            />
+            <div className="blog-post">
+              <BlogPost
+                id={blogPost.id}
+                key={blogPost.id.toString()}
+                title={blogPost.title}
+                date={blogPost.date}
+                teaser={blogPost.teaser}
+                imgSrc={blogPost.imgSrc}
+                link={blogPost.link}
+                handleClick={y => this.handleClick(y)}
+              />
+            </div>
           ))}
         </div>
       </Wrapper>

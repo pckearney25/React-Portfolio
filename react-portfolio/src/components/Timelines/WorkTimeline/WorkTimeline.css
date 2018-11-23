@@ -12,3 +12,8 @@
   width: 26px;
   height: 26px;
 }
+
+.work-timeline-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}

@@ -33,7 +33,7 @@ class WorkTimeline extends Component {
               iconStyle={career.styles}
               icon={career.icon}
             >
-              <h3 className="vertical-timeline-element-title">
+              <h3 className="vertical-timeline-element-title work-timeline-title">
                 {career.title}
               </h3>
               <h4 className="vertical-timeline-element-subtitle">

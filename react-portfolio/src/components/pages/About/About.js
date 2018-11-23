@@ -34,7 +34,7 @@ class About extends React.Component {
         be accessed through well designed web interfaces, and serve as the foundation
         of new businesses. I recently completed the six-month program in
         web-development offered by University of Kansas, am currently seeking
-        employment in the field, and work everyday to advance my coding
+        employment in the field, and work everyday to develop my coding
         skills.`}
           </p>
 
