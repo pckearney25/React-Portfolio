@@ -5,7 +5,7 @@ import PortfolioTimeline from "../../Timelines/PortfolioTimeline";
 import "./Portfolio.css";
 
 class Portfolio extends React.Component {
-  componentWillMount() {
+  componentDidMount() {
     window.scrollTo(0, 0);
   }
 
@@ -17,7 +17,7 @@ class Portfolio extends React.Component {
           sectiontitle={"Portfolio"}
         />
         <p className="section-paragraph">
-          <span>About the Portfolio: </span> Presented cat are a few of the
+          <span>About the Portfolio: </span> Presented below are a few of the
           projects that I've enjoyed working on. These span a range from a
           simple JavaScript game to a full-stack MERN application incorporating
           user authentication. Consistent throughout my work is an emphasis on

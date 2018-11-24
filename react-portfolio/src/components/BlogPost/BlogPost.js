@@ -1,10 +1,13 @@
 import React from "react";
+import { Link, Route } from "react-router-dom";
+import Learn from "..//pages/Learn";
 import "./BlogPost.css";
 
 class BlogPost extends React.Component {
   render() {
-    let blogKey = this.props.id;
-    console.log(blogKey);
+    const blogKey = this.props.id;
+    const matchURL = this.props.match.url;
+    alert(matchURL);
     return (
       <div className="post-container">
         <div className="image-text-div">
@@ -20,12 +23,15 @@ class BlogPost extends React.Component {
             <div className="post-teaser">{`${this.props.teaser}`}</div>
           </div>
         </div>
-        <button
+        <Link
+          to={matchURL}
+          role="button"
           className="blog-open-btn"
           onClick={() => this.props.handleClick(blogKey)}
         >
-          Read Full Post
-        </button>
+          <div className="btn-message">Read Full Post</div>
+        </Link>
+        <Route exact path={matchURL} component={Learn} />
         <h6>{`${this.props.date}`}</h6>
       </div>
     );

@@ -5,7 +5,7 @@ import WorkTimeline from "../../Timelines/WorkTimeline";
 import "./About.css";
 
 class About extends React.Component {
-  componentWillMount() {
+  componentDidlMount() {
     window.scrollTo(0, 0);
   }
 

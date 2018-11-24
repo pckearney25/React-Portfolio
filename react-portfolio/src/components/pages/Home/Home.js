@@ -3,7 +3,7 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import "./Home.css";
 
 class Home extends React.Component {
-  componentWillMount() {
+  componentDidlMount() {
     window.scrollTo(0, 0);
   }
 
