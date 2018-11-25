@@ -25,11 +25,15 @@ class Blog extends React.Component {
           sectiontitle={"Blog"}
         />
         <p className="section-paragraph">
-          {`Check out the summary list of my most recent blog posts below. To see a full post, click the “Read Full Post” button attached to each item. To follow up with me on any post, send me a message over on the “Contact” page.`}
+          <span>{`About the Blog: `}</span>
+          {`Read on to learn more about my journey into web-development and other topics such as entrepreneurship, scientific breakthroughs, and environmental sustainability. To follow up with me on any post, send me a message over on the “Contact” page.`}
+        </p>
+        <p className="section-paragraph">
+          <span>{`Recent Posts: `}</span>
         </p>
         <div className="blog-container">
           {this.state.blogs.map(blogPost => (
-            <div className="blog-post">
+            <div className="blog-post" key={blogPost.id.toString()}>
               <BlogPost
                 id={blogPost.id}
                 key={blogPost.id.toString()}

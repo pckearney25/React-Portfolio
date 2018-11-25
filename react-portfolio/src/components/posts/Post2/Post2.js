@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Wrapper from "../../Wrapper";
+import SectionTitle from "../../SectionTitle";
 import "../FullPost.css";
 
 class Post2 extends React.Component {
@@ -10,6 +11,10 @@ class Post2 extends React.Component {
   render() {
     return (
       <Wrapper>
+        <SectionTitle
+          src={require("../../../assets/images/sunflowers.jpg")}
+          sectiontitle={"Blog Article"}
+        />
         <div className="blog-container">
           <div className="blog-post">
             <div className="post-container">

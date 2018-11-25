@@ -19,15 +19,25 @@ class App extends React.Component {
       <Router>
         <div>
           <Header />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/" component={Home} key="Home" />
+          <Route exact path="/about" component={About} key="About" />
+          <Route
+            exact
+            path="/portfolio"
+            component={Portfolio}
+            key="Portfolio"
+          />
+          <Route exact path="/blog" component={Blog} key="Blog" />
           {blogs.map(blog => (
-            <Route exact path={blog.link} component={blog.component} />
+            <Route
+              exact
+              path={blog.link}
+              component={blog.component}
+              key={blog.id.toString()}
+            />
           ))}
 
-          <Route path="/contact" component={Contact} />
+          <Route exact path="/contact" component={Contact} key="Contact" />
           <Footer />
         </div>
       </Router>

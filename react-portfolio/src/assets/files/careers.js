@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 export default [
   {
-    id: 0,
+    id: "0",
     className: "vertical-timeline-element--work",
     date: "July 2018 - present",
     title: "Founder",
@@ -14,7 +14,7 @@ export default [
     icon: <FontAwesomeIcon class="fa-icon" icon="briefcase" />
   },
   {
-    id: 1,
+    id: "1",
     className: "vertical-timeline-element--education",
     date: "January 2018 - July 2018",
     title: "Certificate in Full-Stack Web-Development",
@@ -25,7 +25,7 @@ export default [
     icon: <FontAwesomeIcon class="fa-icon" icon="graduation-cap" />
   },
   {
-    id: 2,
+    id: "2",
     className: "vertical-timeline-element--work",
     date: "November 2012 - September 2017",
     title: "Founder and CEO",
@@ -37,7 +37,7 @@ export default [
     icon: <FontAwesomeIcon class="fa-icon" icon="briefcase" />
   },
   {
-    id: 3,
+    id: "3",
     className: "vertical-timeline-element--education",
     date: "March 2013 - April 2013",
     title: "Certificate in Tech Entrepreneurship",
@@ -48,7 +48,7 @@ export default [
     icon: <FontAwesomeIcon class="fa-icon" icon="graduation-cap" />
   },
   {
-    id: 4,
+    id: "4",
     className: "vertical-timeline-element--work",
     date: "Aug 1999 - January 2011",
     title: "Senior Director, Medicinal Chemistry",
@@ -60,7 +60,7 @@ export default [
     icon: <FontAwesomeIcon class="fa-icon" icon="briefcase" />
   },
   {
-    id: 5,
+    id: "5",
     className: "vertical-timeline-element--education",
     date: "January 1994",
     title: "PhD in Chemistry",
@@ -71,7 +71,7 @@ export default [
     icon: <FontAwesomeIcon class="fa-icon" icon="graduation-cap" />
   },
   {
-    id: 6,
+    id: "6",
     className: "vertical-timeline-element--education",
     date: "June 1987",
     title: "Bachelor of Science, Chemistry",

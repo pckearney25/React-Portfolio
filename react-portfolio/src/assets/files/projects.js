@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 export default [
   {
-    id: 0,
+    id: "0",
     date: "October 2018",
     title: "Slider Game",
     description:
