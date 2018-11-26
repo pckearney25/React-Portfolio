@@ -40,7 +40,7 @@ class PortfolioTimeline extends Component {
   };
   render() {
     return (
-      <div id="timeline-div">
+      <div className="timeline-div">
         <VerticalTimeline>
           {this.state.projects.map(project => (
             <VerticalTimelineElement

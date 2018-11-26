@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Wrapper from "../../Wrapper";
-import SectionTitle from "../../SectionTitle";
-import "../FullPost.css";
+import Wrapper from "../Wrapper";
+import SectionTitle from "../SectionTitle";
+import "../../assets/css/Blog.css";
 
 class Post1 extends React.Component {
   componentDidMount() {
@@ -12,9 +12,10 @@ class Post1 extends React.Component {
     return (
       <Wrapper>
         <SectionTitle
-          src={require("../../../assets/images/sunflowers.jpg")}
+          src={require("../../assets/images/sunflowers.jpg")}
           sectiontitle={"Blog Article"}
         />
+
         <div className="blog-container">
           <div className="blog-post">
             <div className="post-container">
@@ -22,7 +23,7 @@ class Post1 extends React.Component {
                 <div className="post-image-div">
                   <img
                     className="post-image"
-                    src={require("../../../assets/images/post-images/slider.jpg")}
+                    src={require("../../assets/images/post-images/gardening.jpg")}
                     alt="post-pic"
                   />
                 </div>
@@ -31,9 +32,17 @@ class Post1 extends React.Component {
                   <div className="post-teaser">{`I'm not a brand. I’m a person, and I want to sound like one during professional conversations.`}</div>
                 </div>
               </div>
-
-              <Link to={`/blog`} role="button" className="blog-open-btn">
-                <div className="btn-message">Return to Blog</div>
+              <div className="line-div" />
+              <div className="content-div">
+                <p className="content-regular-paragraph">{``}</p>
+                <p className="content-indented-paragraph">{``}</p>
+                <p className="content-indented-statement">{``}</p>
+                <span className="content-span-italic">{``}</span>
+                <span className="content-span-bold">{``}</span>
+              </div>
+              <div className="line-div" />
+              <Link to={`/blog`} role="button" className="blog-btn">
+                <div className="btn-message">{`Return to Blog`}</div>
               </Link>
               <h6>{`Published November 26, 2018`}</h6>
             </div>

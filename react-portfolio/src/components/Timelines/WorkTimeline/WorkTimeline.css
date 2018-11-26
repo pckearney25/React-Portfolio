@@ -1,10 +1,10 @@
 @import "../../../assets/css/VerticalTimeline.css";
 @import "../../../assets/css/VerticalTimelineElement.css";
 
-#timeline-div {
+.timeline-div {
   background-color: #14390a;
-  margin: 0px 40px 40px 40px;
-  border-radius: 0.5em;
+  margin: 0px 20px 20px 20px;
+  border-radius: 0.25em;
   border: 2px solid #16270f;
 }
 

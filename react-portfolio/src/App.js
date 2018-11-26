@@ -7,9 +7,6 @@ import About from "./components/pages/About";
 import Portfolio from "./components/pages/Portfolio";
 import Blog from "./components/pages/Blog";
 import Contact from "./components/pages/Contact";
-//import Post0 from "./components/posts/Post0";
-//import Post1 from "./components/posts/Post1";
-//import Post2 from "./components/posts/Post2";
 import blogs from "./assets/files/blogs";
 import "./App.css";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./BlogPost.css";
+import "../../assets/css/Blog.css";
 
 class BlogPost extends React.Component {
   render() {
@@ -20,8 +20,8 @@ class BlogPost extends React.Component {
               <div className="post-teaser">{`${this.props.teaser}`}</div>
             </div>
           </div>
-
-          <Link to={this.props.link} role="button" className="blog-open-btn">
+          <div className="line-div" />
+          <Link to={this.props.link} role="button" className="blog-btn">
             <div className="btn-message">Read Full Post</div>
           </Link>
           <h6>{`${this.props.date}`}</h6>

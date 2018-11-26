@@ -1,3 +1,24 @@
+.blog-container {
+  background-color: #14390a;
+  margin: 0px 20px 20px 20px;
+  border-radius: 0.25em;
+  border: 2px solid #16270f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-post {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.blog-post:last-child {
+  padding-bottom: 20px;
+}
+
 .post-container {
   background-color: #ffffff;
   border-radius: 0.25em;
@@ -22,7 +43,8 @@
 }
 
 .post-container h3 {
-  font-size: 1.25em;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7em;
   font-weight: bold;
 }
 .post-container h6 {
@@ -37,15 +59,52 @@
 .post-image {
   height: 150px;
   width: 150px;
-  border: 1px solid #16270f;
+  border: 2px solid #16270f;
+  border-radius: 50%;
 }
 
 .post-teaser {
+  font-family: "Cormorant Garamond", serif;
   margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.2;
 }
-.blog-open-btn {
+
+.line-div {
+  border-top: #16270f 2px solid;
+  margin: 0px 15px 15px 15px;
+}
+
+.content-div {
+  font-family: "Cormorant Garamond", serif;
+  color: black;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-align: justify;
+  margin: 0px 15px 5px 15px;
+}
+.content-regular-paragraph {
+  text-indent: 0.5em;
+  margin: 0px 15px 10px 15px;
+}
+
+.content-indented-statement {
+  margin: 20px 45px 10px 45px;
+}
+
+.content-indented-paragraph {
+  text-indent: 0.5em;
+  margin: 0px 45px 10px 45px;
+}
+
+.content-span-bold {
+  font-weight: 700;
+}
+.content-span-italic {
+  font-style: italic;
+}
+
+.blog-btn {
   width: 120px;
   height: 40px;
   border-radius: 0.25em;
@@ -55,7 +114,7 @@
   background-color: #4f1192;
 }
 
-.blog-open-btn {
+.blog-btn {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.1em;
   color: #ffffff;
@@ -63,15 +122,25 @@
   font-size: 1.1em;
 }
 
-.blog-open-btn:hover,
-.blog-open-btn:focus,
-.blog-open-btn:active {
+.blog-btn:hover,
+.blog-btn:focus,
+.blog-btn:active {
   background-color: #c84a59;
 }
 
 .btn-message {
   text-align: center;
   padding-top: 0.65em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .blog-post {
+    width: 1000px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 699px) {

@@ -3,7 +3,7 @@ import React from "react";
 import Wrapper from "../../Wrapper";
 import BlogPost from "../../BlogPost";
 import SectionTitle from "../../SectionTitle";
-import "./Blog.css";
+import "../../../assets/css/Blog.css";
 
 class Blog extends React.Component {
   constructor(props) {
@@ -26,7 +26,7 @@ class Blog extends React.Component {
         />
         <p className="section-paragraph">
           <span>{`About the Blog: `}</span>
-          {`Read on to learn more about my journey into web-development and other topics such as entrepreneurship, scientific breakthroughs, and environmental sustainability. To follow up with me on any post, send me a message over on the “Contact” page.`}
+          {`Read on to learn more about my journey into web-development and my studies of entrepreneurship, scientice, and environmental sustainability. To follow up with me on any post, message me over on the “Contact” page.`}
         </p>
         <p className="section-paragraph">
           <span>{`Recent Posts: `}</span>

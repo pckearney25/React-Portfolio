@@ -8,8 +8,8 @@ export default [
     date: "Published November 26, 2018",
     title: "About Me In 18 Interview Questions (Part 1 of 3):",
     teaser:
-      "I'm a career chemist transitioning into web-development, and I'm often asked: 'Why would you EVER want to do that?'.",
-    imgSrc: require("../../assets/images/slider.jpg"),
+      '"If you were an animal, which one would you want to be?"...and more!',
+    imgSrc: require("../../assets/images/post-images/dolphin.jpg"),
     link: "/blog/post-0",
     component: Post0
   },
@@ -19,7 +19,7 @@ export default [
     title: "About Me In 18 Interview Questions (Part 2 of 3):",
     teaser:
       "I'm not a brand. I’m a person, and I want to sound like one during professional conversations.",
-    imgSrc: require("../../assets/images/slider.jpg"),
+    imgSrc: require("../../assets/images/post-images/gardening.jpg"),
     link: "/blog/post-1",
     component: Post1
   },
@@ -28,8 +28,8 @@ export default [
     date: "Published November 26, 2018",
     title: "About Me In 18 Interview Questions (Part 3 of 3):",
     teaser:
-      "I can answer canned interview questions all day. I really want to talk about what I’m working on.",
-    imgSrc: require("../../assets/images/slider.jpg"),
+      "What, a snail in a well? Really? Let’s talk about what I’m working on instead.",
+    imgSrc: require("../../assets/images/post-images/snail.jpg"),
     link: "/blog/post-2",
     component: Post2
   }

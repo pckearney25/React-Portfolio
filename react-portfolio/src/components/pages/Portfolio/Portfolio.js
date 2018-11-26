@@ -2,7 +2,6 @@ import React from "react";
 import Wrapper from "../../Wrapper";
 import SectionTitle from "../../SectionTitle";
 import PortfolioTimeline from "../../Timelines/PortfolioTimeline";
-import "./Portfolio.css";
 
 class Portfolio extends React.Component {
   componentDidMount() {
@@ -19,9 +18,9 @@ class Portfolio extends React.Component {
         <p className="section-paragraph">
           <span>About the Portfolio: </span> Presented below are a few of the
           projects that I've enjoyed working on. These span a range from a
-          simple JavaScript game to a full-stack MERN application incorporating
-          user authentication. Consistent throughout my work is an emphasis on
-          providing a clean user interface and an enjoyable user experience.
+          simple JavaScript game to a full-stack MERN application with user
+          authentication. I try to place an emphasis on providing a clean user
+          interface and an enjoyable user experience.
         </p>
 
         <p className="section-paragraph">

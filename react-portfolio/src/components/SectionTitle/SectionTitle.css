@@ -3,7 +3,7 @@
   display: flex;
   justify-content: flex-start;
   flex-flow: row wrap;
-  margin: 40px 0px 30px 0px;
+  margin: 20px 0px 20px 0px;
 }
 
 .section-title-div,
@@ -29,6 +29,10 @@
   display: block;
 }
 
+.section-line-div {
+  border-top: #16270f 2px solid;
+  margin: 0px 20px 20px 20px;
+}
 @media all and (max-width: 670px) {
   .section-title-div,
   .section-img-div {
