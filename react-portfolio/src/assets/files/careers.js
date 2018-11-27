@@ -1,5 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+
+const styles = {
+  width: "26px",
+  height: "26px"
+};
+
 export default [
   {
     id: "0",
@@ -11,7 +17,9 @@ export default [
     description:
       "Market Research, Business Plan Development, Web-Design, Web-Development",
     styles: { background: "#58B041", color: "#fff" },
-    icon: <FontAwesomeIcon class="fa-icon" icon="briefcase" />
+    icon: (
+      <FontAwesomeIcon className="fa-icon" icon="briefcase" style={styles} />
+    )
   },
   {
     id: "1",
@@ -22,7 +30,13 @@ export default [
     location: "Overland Park, KS",
     description: "JavaScript, Node, React, MySQL, MongoDB, Node and more.",
     styles: { background: "#C84A59", color: "#fff" },
-    icon: <FontAwesomeIcon class="fa-icon" icon="graduation-cap" />
+    icon: (
+      <FontAwesomeIcon
+        className="fa-icon"
+        icon="graduation-cap"
+        style={styles}
+      />
+    )
   },
   {
     id: "2",
@@ -34,7 +48,9 @@ export default [
     description:
       "Microscale Chemical Synthesis Technology Development, Grant Writing, Business Development",
     styles: { background: "#58B041", color: "#fff" },
-    icon: <FontAwesomeIcon class="fa-icon" icon="briefcase" />
+    icon: (
+      <FontAwesomeIcon className="fa-icon" icon="briefcase" style={styles} />
+    )
   },
   {
     id: "3",
@@ -45,7 +61,13 @@ export default [
     location: "Kansas City, MO",
     description: "Study of Start-up Entrepreneurship",
     styles: { background: "#C84A59", color: "#fff" },
-    icon: <FontAwesomeIcon class="fa-icon" icon="graduation-cap" />
+    icon: (
+      <FontAwesomeIcon
+        className="fa-icon"
+        icon="graduation-cap"
+        style={styles}
+      />
+    )
   },
   {
     id: "4",
@@ -57,7 +79,9 @@ export default [
     description:
       "Cancer and Inflammation Drug Discovery, Chemical Library Development, Team Leadership, Department and Project Management",
     styles: { background: "#58B041", color: "#fff" },
-    icon: <FontAwesomeIcon class="fa-icon" icon="briefcase" />
+    icon: (
+      <FontAwesomeIcon className="fa-icon" icon="briefcase" style={styles} />
+    )
   },
   {
     id: "5",
@@ -68,7 +92,13 @@ export default [
     location: "Pasadena, CA",
     description: "Specialization in Physical Organic Chemistry",
     styles: { background: "#C84A59", color: "#fff" },
-    icon: <FontAwesomeIcon class="fa-icon" icon="graduation-cap" />
+    icon: (
+      <FontAwesomeIcon
+        className="fa-icon"
+        icon="graduation-cap"
+        style={styles}
+      />
+    )
   },
   {
     id: "6",
@@ -79,6 +109,12 @@ export default [
     location: "Pittsburgh, PA",
     description: "Graduation with honors.",
     styles: { background: "#C84A59", color: "#fff" },
-    icon: <FontAwesomeIcon class="fa-icon" icon="graduation-cap" />
+    icon: (
+      <FontAwesomeIcon
+        className="fa-icon"
+        icon="graduation-cap"
+        style={styles}
+      />
+    )
   }
 ];

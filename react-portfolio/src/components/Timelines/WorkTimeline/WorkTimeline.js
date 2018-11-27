@@ -21,6 +21,10 @@ class WorkTimeline extends Component {
     careers
   };
   render() {
+    const styles = {
+      width: "26px",
+      height: "26px"
+    };
     return (
       <div className="timeline-div">
         <VerticalTimeline>
@@ -50,7 +54,9 @@ class WorkTimeline extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--gardening"
             iconStyle={{ background: "#44220C", color: "#fff" }}
-            icon={<FontAwesomeIcon class="fa-icon" icon="leaf" />}
+            icon={
+              <FontAwesomeIcon className="fa-icon" icon="leaf" style={styles} />
+            }
           />
         </VerticalTimeline>
       </div>

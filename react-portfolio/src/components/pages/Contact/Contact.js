@@ -14,6 +14,10 @@ class Contact extends React.Component {
   }
 
   render() {
+    const styles = {
+      width: "16px",
+      height: "16px"
+    };
     return (
       <Wrapper>
         <SectionTitle
@@ -79,7 +83,11 @@ class Contact extends React.Component {
                 </div>
               </div>
               <button type="submit" className="btn-submit">
-                <FontAwesomeIcon icon="dove" />
+                <FontAwesomeIcon
+                  className="fa-icon"
+                  icon="dove"
+                  style={styles}
+                />
                 <span> Contact Patrick!</span>
               </button>
               <input type="hidden" name="form_order" value="alpha" />

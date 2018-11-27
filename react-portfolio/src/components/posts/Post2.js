@@ -29,7 +29,7 @@ class Post2 extends React.Component {
                 </div>
                 <div className="post-text-div">
                   <h3>{`About Me In 18 Interview Questions (Part 3 of 3):`}</h3>
-                  <div className="post-teaser">{`What, a snail in a well? Really? Let’s talk about what I’m working on instead.`}</div>
+                  <div className="post-teaser">{`A snail in a well? Really? Let’s talk about what I’m working on instead.`}</div>
                 </div>
               </div>
               <div className="line-div" />

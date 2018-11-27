@@ -28,7 +28,7 @@ export default [
     date: "Published November 26, 2018",
     title: "About Me In 18 Interview Questions (Part 3 of 3):",
     teaser:
-      "What, a snail in a well? Really? Let’s talk about what I’m working on instead.",
+      "A snail in a well? Really? Let’s talk about what I’m working on instead.",
     imgSrc: require("../../assets/images/post-images/snail.jpg"),
     link: "/blog/post-2",
     component: Post2

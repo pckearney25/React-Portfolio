@@ -39,6 +39,10 @@ class PortfolioTimeline extends Component {
     projects
   };
   render() {
+    const styles = {
+      width: "26px",
+      height: "26px"
+    };
     return (
       <div className="timeline-div">
         <VerticalTimeline>
@@ -47,7 +51,7 @@ class PortfolioTimeline extends Component {
               id={project.id}
               key={project.id}
               className="vertical-timeline-element--project"
-              date={`Originally Deployed: ${project.date}`}
+              date={`Deployed: ${project.date}`}
               iconStyle={{ background: "#58B041", color: "#fff" }}
               icon={project.icon}
             >
@@ -89,7 +93,9 @@ class PortfolioTimeline extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--gardening"
             iconStyle={{ background: "#44220C", color: "#fff" }}
-            icon={<FontAwesomeIcon class="fa-icon" icon="leaf" />}
+            icon={
+              <FontAwesomeIcon className="fa-icon" icon="leaf" style={styles} />
+            }
           />
         </VerticalTimeline>
       </div>

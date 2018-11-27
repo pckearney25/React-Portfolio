@@ -1,8 +1,31 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+
+const styles = {
+  width: "26px",
+  height: "26px"
+};
 export default [
   {
     id: "0",
+    date: "November 2018",
+    title: "React Portfolio",
+    description: "My New Personal Website Written from Scratch in React",
+    highlights:
+      "React, ReactCSSTransitionGroup, ReactVerticalTimeline, ReactFontAwesome, Form Submission via PHP.",
+    deployed: "https://pckearney25.github.io/React-Portfolio/",
+    repo: "https://github.com/pckearney25/React-Portfolio",
+    imgSrc: require("../../assets/images/portfolio.jpg"),
+    icon: (
+      <FontAwesomeIcon
+        className="fa-icon"
+        icon={["fab", "react"]}
+        style={styles}
+      />
+    )
+  },
+  {
+    id: "1",
     date: "October 2018",
     title: "Slider Game",
     description:
@@ -12,10 +35,16 @@ export default [
     deployed: "https://pckearney25.github.io/Slider-Game/",
     repo: "https://github.com/pckearney25/Slider-Game",
     imgSrc: require("../../assets/images/slider.jpg"),
-    icon: <FontAwesomeIcon class="fa-icon" icon={["fab", "react"]} />
+    icon: (
+      <FontAwesomeIcon
+        className="fa-icon"
+        icon={["fab", "react"]}
+        style={styles}
+      />
+    )
   },
   {
-    id: "1",
+    id: "2",
     date: "July 2018",
     title: "Bee-Z Street",
     description: "A Full-Stack MERN App for Creating Native Plant Gardens.",
@@ -24,10 +53,47 @@ export default [
     deployed: "https://bee-z-street.herokuapp.com/",
     repo: "https://github.com/pckearney25/Bee-Z_Street",
     imgSrc: require("../../assets/images/bee.jpg"),
-    icon: <FontAwesomeIcon class="fa-icon" icon="database" />
+    icon: <FontAwesomeIcon className="fa-icon" icon="database" style={styles} />
   },
   {
-    id: "2",
+    id: "3",
+    date: "June 2018",
+    title: "NYT Scrubber",
+    description: "A Full-Stack MERN App for Gathering News Articles.",
+    highlights: "React, Mongo Databases, Passport Authentication.",
+    deployed: "https://pck-ntyscrubber-mern-app.herokuapp.com/",
+    repo: "https://github.com/pckearney25/NYT_MERN_App",
+    imgSrc: require("../../assets/images/nytimes.jpg"),
+    icon: <FontAwesomeIcon className="fa-icon" icon="database" style={styles} />
+  },
+  {
+    id: "4",
+    date: "May 2018",
+    title: "Esquire Scraper",
+    description:
+      "An App for Reviewing and Commenting on Articles from Esquire.",
+    highlights:
+      "Mongodb Database, Express-Handlebars, and the Cheerio package for Website Scraping.",
+    deployed: "https://pck-mongo-esquire-scrapper.herokuapp.com/",
+    repo: "https://github.com/pckearney25/Esquire-Mongo-Scraper",
+    imgSrc: require("../../assets/images/mensfashion.jpg"),
+    icon: <FontAwesomeIcon className="fa-icon" icon="database" style={styles} />
+  },
+  {
+    id: "5",
+    date: "April 2018",
+    title: "Handling Burgers and ORMs",
+    description:
+      "A Full-Stack App Using a MySQL Database to Keep Track of Hamburgers",
+    highlights:
+      "Node, MySQL, Express, Express-Handlebars, and a Custom-Coded ORM.",
+    deployed: "https://pck-mysql-burger-app.herokuapp.com/",
+    repo: "https://github.com/pckearney25/Burger",
+    imgSrc: require("../../assets/images/burger.jpg"),
+    icon: <FontAwesomeIcon className="fa-icon" icon="database" style={styles} />
+  },
+  {
+    id: "6",
     date: "March 2018",
     title: "Divas Game",
     description: "A JavaScript 'Music Diva' Themed Hangman Style Game",
@@ -36,10 +102,16 @@ export default [
     deployed: "https://pckearney25.github.io/Divas-Game/",
     repo: "https://github.com/pckearney25/Divas-Game",
     imgSrc: require("../../assets/images/diva.jpg"),
-    icon: <FontAwesomeIcon class="fa-icon" icon={["fab", "js-square"]} />
+    icon: (
+      <FontAwesomeIcon
+        className="fa-icon"
+        icon={["fab", "js-square"]}
+        style={styles}
+      />
+    )
   },
   {
-    id: "3",
+    id: "7",
     date: "March 2018",
     title: "Triva Game",
     description: "A'World Cities' Themed bar-style Trivia Game.",
@@ -48,6 +120,12 @@ export default [
     deployed: "https://pckearney25.github.io/TriviaGame/",
     repo: " https://github.com/pckearney25/TriviaGame.",
     imgSrc: require("../../assets/images/kyoto.jpg"),
-    icon: <FontAwesomeIcon class="fa-icon" icon={["fab", "js-square"]} />
+    icon: (
+      <FontAwesomeIcon
+        className="fa-icon"
+        icon={["fab", "js-square"]}
+        style={styles}
+      />
+    )
   }
 ];
