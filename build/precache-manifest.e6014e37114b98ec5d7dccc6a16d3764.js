@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/slider.468d4ab8.jpg"
   },
   {
-    "revision": "32741caf169874553814",
+    "revision": "1fb68498b355917aaa46",
     "url": "/React-Portfolio/static/css/main.5cbdabf9.chunk.css"
   },
   {
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/portfolio.f48b4e2b.jpg"
   },
   {
-    "revision": "32741caf169874553814",
-    "url": "/React-Portfolio/static/js/main.32741caf.chunk.js"
+    "revision": "1fb68498b355917aaa46",
+    "url": "/React-Portfolio/static/js/main.1fb68498.chunk.js"
   },
   {
     "revision": "3cf082b50afbfa49716ec9811b1861e6",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/React-Portfolio/static/media/rudbeckia.9df2ebf4.jpg"
   },
   {
-    "revision": "7553a0fd981e0cd40658855ea814c06a",
+    "revision": "cb34bff1abe774a23a9c30162be52566",
     "url": "/React-Portfolio/index.html"
   }
 ];
