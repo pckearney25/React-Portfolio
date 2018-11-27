@@ -40,7 +40,7 @@
   font-size: 1.25em;
   display: block;
   margin-bottom: 5px;
-  color: #d1834e;
+  color: #ffdd22;
 }
 
 .form-group input {
@@ -79,24 +79,24 @@ small {
   display: block;
   font-size: 1.1em;
   margin-bottom: 5px;
-  color: #d1834e;
+  color: #ffdd22;
 }
 
-button {
+.btn-contact {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.1em;
-  width: 160px;
-  height: 40px;
+  width: 168px;
+  height: 42px;
   border-radius: 0.25em;
-  border: 1px solid #340926;
-  color: white;
+  border: 1px solid #ffdd22;
+  color: #ffdd22;
   background-color: #4f1192;
 }
 
-button:hover,
-button:focus,
-button:active {
-  background-color: #c84a59;
+.btn-contact:hover,
+.btn-contact:focus,
+.btn-contact:active {
+  background-color: #58b041;
 }
 
 #contact-addendum {

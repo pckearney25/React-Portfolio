@@ -82,7 +82,7 @@ class Contact extends React.Component {
                   </small>
                 </div>
               </div>
-              <button type="submit" className="btn-submit">
+              <button type="submit" className="btn-contact">
                 <FontAwesomeIcon
                   className="fa-icon"
                   icon="dove"

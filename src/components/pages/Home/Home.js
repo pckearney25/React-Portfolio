@@ -1,16 +1,14 @@
 import React from "react";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
+import WrapperHome from "../../WrapperHome";
 import "./Home.css";
 
 class Home extends React.Component {
-  componentDidlMount() {
-    window.scrollTo(0, 0);
-  }
-
   render() {
+    window.scrollTo(0, 0);
     return (
-      <div>
-        <ReactCSSTransitionGroup
+      <WrapperHome>
+        <CSSTransitionGroup
           transitionName="boxer"
           transitionAppear={true}
           transitionAppearTimeout={600000}
@@ -18,7 +16,7 @@ class Home extends React.Component {
           transitionLeave={false}
         >
           <div id="quote-container">
-            <ReactCSSTransitionGroup
+            <CSSTransitionGroup
               transitionName="quote1"
               transitionAppear={true}
               transitionAppearTimeout={1700}
@@ -26,8 +24,8 @@ class Home extends React.Component {
               transitionLeave={false}
             >
               <h2> {`"Absorb the opportunities around you."`}</h2>
-            </ReactCSSTransitionGroup>
-            <ReactCSSTransitionGroup
+            </CSSTransitionGroup>
+            <CSSTransitionGroup
               transitionName="quote2"
               transitionAppear={true}
               transitionAppearTimeout={3200}
@@ -35,9 +33,9 @@ class Home extends React.Component {
               transitionLeave={false}
             >
               <h2> {`"Bloom where you're planted."`}</h2>
-            </ReactCSSTransitionGroup>
+            </CSSTransitionGroup>
 
-            <ReactCSSTransitionGroup
+            <CSSTransitionGroup
               transitionName="quote3"
               transitionAppear={true}
               transitionAppearTimeout={4700}
@@ -45,10 +43,10 @@ class Home extends React.Component {
               transitionLeave={false}
             >
               <h2>{`"And create the seeds for a better world."`}</h2>
-            </ReactCSSTransitionGroup>
+            </CSSTransitionGroup>
           </div>
-        </ReactCSSTransitionGroup>
-      </div>
+        </CSSTransitionGroup>
+      </WrapperHome>
     );
   }
 }

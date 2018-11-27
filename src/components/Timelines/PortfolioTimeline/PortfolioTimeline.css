@@ -45,8 +45,8 @@
 }
 .timeline-repo-btn,
 .timeline-deployed-btn {
-  width: 120px;
-  height: 40px;
+  width: 128px;
+  height: 42px;
   border-radius: 0.25em;
   margin-top: 10px;
   margin-right: 10px;
@@ -58,10 +58,9 @@
 .timeline-repo-btn a,
 .timeline-deployed-btn a {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.1em;
 }
 
 .timeline-repo-btn:hover,

@@ -32,5 +32,3 @@ class BlogPost extends React.Component {
 }
 
 export default BlogPost;
-//const blogKey = this.props.id;
-//onClick={() => this.props.handleClick(blogKey)}
