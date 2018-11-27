@@ -5,14 +5,14 @@ import "./Header.css";
 const Header = () => (
   <header>
     <div className="header-child">
-      <Link to="/about" className="home-link">
+      <Link to="/" className="home-link">
         <h1>Patrick Kearney</h1>
       </Link>
       <h5>Scientist, Entrepreneur, Web-Developer</h5>
     </div>
     <ul className="header-child">
       <li className="header-li">
-        <Link to="/" className="hvr-grow active">
+        <Link to="/about" className="hvr-grow active">
           About
         </Link>
       </li>
