@@ -17,7 +17,7 @@ class About extends React.Component {
             sectiontitle={"About Me"}
           />
           <p className="section-paragraph">
-            <span>{`Career: `}</span>
+            <span>{`Career: Taxi`}</span>
             {`In my work as a both a PhD
         pharmaceutical research scientist and an entrepreneur, I’ve seen a need
         for making information more useful to everyday people. In the next phase
