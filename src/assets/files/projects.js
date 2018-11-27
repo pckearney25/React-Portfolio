@@ -118,7 +118,7 @@ export default [
     highlights:
       "JavaScript, jQuery, and JS-timers Are Used to Present a Slide-show of Questions and Answers.",
     deployed: "https://pckearney25.github.io/TriviaGame/",
-    repo: " https://github.com/pckearney25/TriviaGame.",
+    repo: "https://github.com/pckearney25/TriviaGame",
     imgSrc: require("../../assets/images/kyoto.jpg"),
     icon: (
       <FontAwesomeIcon
