@@ -15,8 +15,8 @@ class Contact extends React.Component {
 
   render() {
     const styles = {
-      width: "16px",
-      height: "16px"
+      width: "14px",
+      height: "14px"
     };
     return (
       <Wrapper>
@@ -88,7 +88,7 @@ class Contact extends React.Component {
                   icon="dove"
                   style={styles}
                 />
-                <span> Contact Patrick!</span>
+                <span>{` Contact Patrick!`}</span>
               </button>
               <input type="hidden" name="form_order" value="alpha" />
               <input type="hidden" name="form_delivery" value="hourly_digest" />
