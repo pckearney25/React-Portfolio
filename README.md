@@ -13,7 +13,7 @@ Installation
 Upon downloading/cloning the application from this GitHub repository, a potential user will need to install the packages outlined in the package.json file. The installation of yarn is recommended for consistent package management for recoding purposes.
 
 Built With
-JavaScript, React (https://reactjs.org/), React-Vertical-Timeline, React-CSS-Transitions, and React-FontAwesome.
+JavaScript, React (https://reactjs.org/), React-Vertical-Timeline, React-CSS-Transition-Group, and React-FontAwesome.
 
 The Create-React-App package was used to build the core template structure for the app. More details on this package can be found in the Boiler README file.
 The Yarn package was used for package management of the program.
