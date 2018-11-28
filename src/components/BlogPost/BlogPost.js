@@ -4,6 +4,7 @@ import "../../assets/css/Blog.css";
 
 class BlogPost extends React.Component {
   render() {
+    const blogHandleClick = this.props.blogHandleClick;
     return (
       <div>
         <div className="post-container">
@@ -21,7 +22,14 @@ class BlogPost extends React.Component {
             </div>
           </div>
           <div className="line-div" />
-          <Link to={this.props.link} role="button" className="blog-btn">
+          <Link
+            to={this.props.link}
+            role="button"
+            className="blog-btn"
+            onClick={() => {
+              blogHandleClick();
+            }}
+          >
             <div className="btn-message">Read Full Post</div>
           </Link>
           <h6>{`${this.props.date}`}</h6>

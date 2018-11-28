@@ -1,3 +1,4 @@
+import blogs from "./assets/files/blogs";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -10,7 +11,24 @@ import Contact from "./components/pages/Contact";
 import "./App.css";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      blogs,
+      blogStyles: { display: "block" }
+    };
+  }
+
+  blogHandleClick() {
+    let blogStyles = this.state.blogStyles;
+    console.log(blogStyles);
+    this.setState({ blogStyles: { display: "none" } });
+  }
   render() {
+    const props = {
+      state: this.state,
+      blogHandleClick: () => this.blogHandleClick()
+    };
     return (
       <Router>
         <div>
@@ -18,8 +36,11 @@ class App extends React.Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
-          <Route path="/blog" component={Blog} />
-          <Route exact path="/contact" component={Contact} key="Contact" />
+          <Route
+            path="/blog"
+            render={routeProps => <Blog {...routeProps} {...props} />}
+          />
+          <Route exact path="/contact" component={Contact} />
           <Footer />
         </div>
       </Router>
