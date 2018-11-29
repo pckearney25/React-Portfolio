@@ -9,6 +9,9 @@ class Post2 extends React.Component {
     window.scrollTo(0, 0);
   }
   render() {
+    const cat = this.props.cat;
+    console.log(cat);
+    const blogHandleClick = this.props.blogHandleClick;
     return (
       <Wrapper>
         <SectionTitle
@@ -80,7 +83,14 @@ class Post2 extends React.Component {
                 <p className="content-regular-paragraph">{`Hope you found the series informative. Remember to wander on over to the "Contact" page, if you want to talk more!`}</p>
               </div>
               <div className="line-div" />
-              <Link to={`/blog`} role="button" className="blog-btn">
+              <Link
+                to={`/blog`}
+                role="button"
+                className="blog-btn"
+                onClick={() => {
+                  blogHandleClick();
+                }}
+              >
                 <div className="btn-message">{`Return to Blog`}</div>
               </Link>
               <h6>{`Published November 26, 2018`}</h6>

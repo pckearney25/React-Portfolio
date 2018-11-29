@@ -9,6 +9,9 @@ class Post0 extends React.Component {
     window.scrollTo(0, 0);
   }
   render() {
+    const cat = this.props.cat;
+    console.log(cat);
+    const blogHandleClick = this.props.blogHandleClick;
     return (
       <Wrapper>
         <SectionTitle
@@ -89,7 +92,14 @@ class Post0 extends React.Component {
                 </p>
               </div>
               <div className="line-div" />
-              <Link to={`/blog`} role="button" className="blog-btn">
+              <Link
+                to={`/blog`}
+                role="button"
+                className="blog-btn"
+                onClick={() => {
+                  blogHandleClick();
+                }}
+              >
                 <div className="btn-message">Return to Blog</div>
               </Link>
               <h6>{`Published November 26, 2018`}</h6>

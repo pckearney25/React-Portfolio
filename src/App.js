@@ -22,7 +22,11 @@ class App extends React.Component {
   blogHandleClick() {
     let blogStyles = this.state.blogStyles;
     console.log(blogStyles);
-    this.setState({ blogStyles: { display: "none" } });
+    if (blogStyles.display === "block") {
+      this.setState({ blogStyles: { display: "none" } });
+    } else {
+      this.setState({ blogStyles: { display: "block" } });
+    }
   }
   render() {
     const props = {

@@ -10,6 +10,10 @@ class Blog extends React.Component {
     const blogs = this.props.state.blogs;
     const blogStyles = this.props.state.blogStyles;
     const blogHandleClick = this.props.blogHandleClick;
+    const fullPostProps = {
+      cat: "My cat is pretty!",
+      blogHandleClick: () => this.blogHandleClick()
+    };
     console.log(blogStyles);
     window.scrollTo(0, 0);
     return (
@@ -49,10 +53,18 @@ class Blog extends React.Component {
           </Wrapper>
         </div>
         {blogs.map(blogPost => (
+          //<Route
+          // exact
+          //path={blogPost.link}
+          //component={blogPost.component}
+          // key={blogPost.id.toString()}
+          ///>
           <Route
             exact
             path={blogPost.link}
-            component={blogPost.component}
+            render={routeProps => (
+              <blogPost.component {...routeProps} {...fullPostProps} />
+            )}
             key={blogPost.id.toString()}
           />
         ))}
