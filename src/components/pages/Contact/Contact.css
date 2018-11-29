@@ -40,7 +40,7 @@
   font-size: 1.25em;
   display: block;
   margin-bottom: 5px;
-  color: #ffdd22;
+  color: #eec643;
 }
 
 .form-group input {
@@ -79,7 +79,7 @@ small {
   display: block;
   font-size: 1.1em;
   margin-bottom: 5px;
-  color: #ffdd22;
+  color: #eec643;
 }
 
 .btn-contact {
@@ -88,9 +88,10 @@ small {
   width: 180px;
   height: 44px;
   border-radius: 0.25em;
-  border: 1px solid #ffdd22;
-  color: #ffdd22;
-  background-color: #4f1192;
+  border: 1px solid #4f1192;
+  color: #4f1192;
+
+  background-color: #eec643;
 }
 
 .btn-contact:hover,

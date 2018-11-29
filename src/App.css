@@ -40,6 +40,15 @@ h4 {
   font-weight: 700;
 }
 
+.section-paragraph a {
+  color: #c84a59;
+  text-decoration: none;
+}
+
+.section-paragraph a:hover {
+  color: #58b041;
+}
+
 .section-list {
   list-style-type: none;
   display: flex;
