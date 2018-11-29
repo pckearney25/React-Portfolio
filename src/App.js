@@ -1,6 +1,6 @@
 import blogs from "./assets/files/blogs";
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/pages/Home";
@@ -20,26 +20,29 @@ class App extends React.Component {
       <Router>
         <div>
           <Header />
-          <Route exact path="/" component={Home} key="home" />
-          <Route exact path="/about" component={About} key="about" />
-          <Route
-            exact
-            path="/portfolio"
-            component={Portfolio}
-            key="portfolio"
-          />
-          <Route exact path="/blog" component={Blog} key="blog" />
-          {blogs.map(blogPost => (
+          <Switch>
+            <Route exact path="/" component={Home} key="home" />
+            <Route exact path="/about" component={About} key="about" />
             <Route
               exact
-              path={blogPost.link}
-              render={routeProps => (
-                <blogPost.component {...routeProps} {...fullPostProps} />
-              )}
-              key={blogPost.id.toString()}
+              path="/portfolio"
+              component={Portfolio}
+              key="portfolio"
             />
-          ))}
-          <Route exact path="/contact" component={Contact} />
+            <Route exact path="/blog" component={Blog} key="blog" />
+            {blogs.map(blogPost => (
+              <Route
+                exact
+                path={blogPost.link}
+                render={routeProps => (
+                  <blogPost.component {...routeProps} {...fullPostProps} />
+                )}
+                key={blogPost.id.toString()}
+              />
+            ))}
+            <Route exact path="/contact" component={Contact} />
+            <Route path="*" component={Home} key="nomatch" />
+          </Switch>
           <Footer />
         </div>
       </Router>
