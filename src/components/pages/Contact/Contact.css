@@ -90,14 +90,13 @@ small {
   border-radius: 0.25em;
   border: 1px solid #4f1192;
   color: #4f1192;
-
-  background-color: #eec643;
+  background-color: #58b041;
 }
 
 .btn-contact:hover,
 .btn-contact:focus,
 .btn-contact:active {
-  background-color: #58b041;
+  background-color: #eec643;
 }
 
 #contact-addendum {

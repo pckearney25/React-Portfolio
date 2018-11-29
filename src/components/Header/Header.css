@@ -67,11 +67,15 @@ header ul li a {
   transition-property: transform;
 }
 
-.hvr-grow:hover,
+.hvr-grow:hover {
+  transform: scale(1.125);
+  color: #4f1192;
+}
+
 .hvr-grow:focus,
 .hvr-grow:active {
   transform: scale(1.125);
-  color: #4f1192;
+  color: #58b041;
 }
 
 @media all and (max-width: 800px) {
