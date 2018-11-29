@@ -4,14 +4,11 @@ import Wrapper from "../Wrapper";
 import SectionTitle from "../SectionTitle";
 import "../../assets/css/Blog.css";
 
-class Post0 extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+class NewPost extends React.Component {
   render() {
+    window.scrollTo(0, 0);
     const cat = this.props.cat;
     console.log(cat);
-    const blogHandleClick = this.props.blogHandleClick;
     return (
       <Wrapper>
         <SectionTitle
@@ -44,14 +41,7 @@ class Post0 extends React.Component {
                 <span className="content-span-bold">{``}</span>
               </div>
               <div className="line-div" />
-              <Link
-                to={`/blog`}
-                role="button"
-                className="blog-btn"
-                onClick={() => {
-                  blogHandleClick();
-                }}
-              >
+              <Link to={`/blog`} role="button" className="blog-btn">
                 <div className="btn-message">{`Return to Blog`}</div>
               </Link>
               <h6>{`Published November 26, 2018`}</h6>
@@ -63,4 +53,4 @@ class Post0 extends React.Component {
   }
 }
 
-export default Post0;
+export default NewPost;
