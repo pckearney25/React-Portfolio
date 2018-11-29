@@ -1,4 +1,4 @@
-//import blogs from "./assets/files/blogs";
+import blogs from "./assets/files/blogs";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -29,7 +29,16 @@ class App extends React.Component {
             key="portfolio"
           />
           <Route exact path="/blog" component={Blog} key="blog" />
-
+          {blogs.map(blogPost => (
+            <Route
+              exact
+              path={blogPost.link}
+              render={routeProps => (
+                <blogPost.component {...routeProps} {...fullPostProps} />
+              )}
+              key={blogPost.id.toString()}
+            />
+          ))}
           <Route exact path="/contact" component={Contact} />
           <Footer />
         </div>
@@ -39,19 +48,10 @@ class App extends React.Component {
 }
 
 export default App;
-//{blogs.map(blogPost => (
+
 //<Route
 // exact
 //path={blogPost.link}
 //component={blogPost.component}
 // key={blogPost.id.toString()}
 ///>
-// <Route
-//exact
-//path={blogPost.link}
-//render={routeProps => (
-//<blogPost.component {...routeProps} {...fullPostProps} />
-//)}
-//key={blogPost.id.toString()}
-///>
-//))}
