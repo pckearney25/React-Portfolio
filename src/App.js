@@ -33,6 +33,11 @@ class App extends React.Component {
       state: this.state,
       blogHandleClick: () => this.blogHandleClick()
     };
+
+    const fullPostProps = {
+      cat: "My cat is pretty!",
+      blogHandleClick: () => this.blogHandleClick()
+    };
     return (
       <Router>
         <div>
@@ -44,6 +49,22 @@ class App extends React.Component {
             path="/blog"
             render={routeProps => <Blog {...routeProps} {...props} />}
           />
+          {blogs.map(blogPost => (
+            //<Route
+            // exact
+            //path={blogPost.link}
+            //component={blogPost.component}
+            // key={blogPost.id.toString()}
+            ///>
+            <Route
+              exact
+              path={blogPost.link}
+              render={routeProps => (
+                <blogPost.component {...routeProps} {...fullPostProps} />
+              )}
+              key={blogPost.id.toString()}
+            />
+          ))}
           <Route exact path="/contact" component={Contact} />
           <Footer />
         </div>
