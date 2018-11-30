@@ -12,7 +12,7 @@ export default [
     title: "React Portfolio",
     description: "My New Personal Website Written from Scratch in React",
     highlights:
-      "React, ReactCSSTransitionGroup, ReactVerticalTimeline, ReactFontAwesome, Form Submission via PHP.",
+      "React, ReactCSSTransitionGroup, ReactVerticalTimeline, ReactFontAwesome, CSS Flexbox, Form Submission via PHP.",
     deployed: "https://pckearney25.github.io/React-Portfolio/",
     repo: "https://github.com/pckearney25/React-Portfolio",
     imgSrc: require("../../assets/images/portfolio.jpg"),
@@ -31,7 +31,7 @@ export default [
     description:
       "A React Clickable Puzzle Based on Those Old Plastic Childrens Toys.",
     highlights:
-      "React, JavaScript Timers, Playable as a Numbers or Picture Puzzle.",
+      "React, JavaScript Timers, CSS Flexbox, Playable as a Numbers or Picture Puzzle.",
     deployed: "https://pckearney25.github.io/Slider-Game/",
     repo: "https://github.com/pckearney25/Slider-Game",
     imgSrc: require("../../assets/images/slider.jpg"),
