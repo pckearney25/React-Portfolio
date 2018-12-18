@@ -10,10 +10,10 @@ export default [
     id: "0",
     date: "November 2018",
     title: "React Portfolio",
-    description: "My New Personal Website Written from Scratch in React",
+    description: "My New Personal Website Created with React",
     highlights:
       "React, ReactCSSTransitionGroup, ReactVerticalTimeline, ReactFontAwesome, CSS Flexbox, Form Submission via PHP.",
-    deployed: "https://pckearney25.github.io/React-Portfolio/",
+    deployed: "https://pckearney.com",
     repo: "https://github.com/pckearney25/React-Portfolio",
     imgSrc: require("../../assets/images/portfolio.jpg"),
     icon: (

@@ -58,7 +58,7 @@ class About extends React.Component {
           </p>
 
           <p className="section-paragraph">
-            {`Download my techical resume or scientific CV here:`}
+            <span>Technical Resume and Scientific CV: </span>
           </p>
           <ul className="section-list">
             <li>
