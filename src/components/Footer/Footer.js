@@ -38,6 +38,8 @@ const Footer = () => (
         <FontAwesomeIcon icon={["fab", "stack-overflow"]} className="fab" />
       </a>
     </div>
+
+    <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async />
   </footer>
 );
 

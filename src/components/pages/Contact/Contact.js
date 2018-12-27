@@ -39,6 +39,7 @@ class Contact extends React.Component {
           </p>
           <div className="contact-container">
             <form action="/webformmailer.php" method="post" id="contact-form">
+              <input type="hidden" name="subject" value="Submission" />
               <input type="hidden" name="redirect" value="thankyou.html" />
               <div id="form-info-container">
                 <div className="form-group">
