@@ -104,6 +104,16 @@
   font-style: italic;
 }
 
+.blog-link {
+  color: #58b00a;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.blog-link:hover {
+  color: #4f1192;
+}
+
 .blog-btn {
   width: 120px;
   height: 40px;

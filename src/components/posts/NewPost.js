@@ -39,6 +39,7 @@ class NewPost extends React.Component {
                 <p className="content-indented-statement">{``}</p>
                 <span className="content-span-italic">{``}</span>
                 <span className="content-span-bold">{``}</span>
+                <a className="blog-link" href="">{``}</a>
               </div>
               <div className="line-div" />
               <Link to={`/blog`} role="button" className="blog-btn">

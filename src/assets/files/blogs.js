@@ -1,8 +1,18 @@
 import Post0 from "../../components/posts/Post0";
 import Post1 from "../../components/posts/Post1";
 import Post2 from "../../components/posts/Post2";
+import Post3 from "../../components/posts/Post3";
 
 export default [
+  {
+    id: 3,
+    date: "Published December 28, 2018",
+    title: "Joyful Coding",
+    teaser: "I'm resolving to create joy-inspiring user experiences in 2019.",
+    imgSrc: require("../../assets/images/post-images/confetti.jpg"),
+    link: "/blog/post-3",
+    component: Post3
+  },
   {
     id: 0,
     date: "Published November 26, 2018",
