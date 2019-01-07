@@ -74,7 +74,7 @@ export default [
     className: "vertical-timeline-element--work",
     date: "Aug 1999 - January 2011",
     title: "Senior Director, Medicinal Chemistry",
-    organization: "Exeleixis LLC",
+    organization: "Exelixis LLC",
     location: "South San Francisco, CA",
     description:
       "Cancer and Inflammation Drug Discovery, Chemical Library Development, Team Leadership, Department and Project Management",
